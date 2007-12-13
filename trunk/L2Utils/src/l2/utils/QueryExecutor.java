@@ -83,7 +83,7 @@ public class QueryExecutor {
 		int level = 65;
 		double dmgProportion = 1d;
 		double alternativeXP = 0d;
-		HigherXpPerHpFirst comparator = new HigherXpPerHpFirst( level, dmgProportion, alternativeXP );
+		HigherXpPerHpFirstComparator comparator = new HigherXpPerHpFirstComparator( level, dmgProportion, alternativeXP );
 		Collections.sort(mobs, comparator);
 		
 		for (Mob mob : mobs) {
