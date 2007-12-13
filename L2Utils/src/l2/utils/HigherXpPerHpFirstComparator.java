@@ -2,13 +2,13 @@ package l2.utils;
 
 import java.util.Comparator;
 
-public class HigherXpPerHpFirst implements Comparator<Mob> {
+public class HigherXpPerHpFirstComparator implements Comparator<Mob> {
 	
 	private final int playerLvl;
 	private final double proportion;
 	private final double altXP;
 
-	public HigherXpPerHpFirst( int playerLvl, double proportion, double altXP ) {
+	public HigherXpPerHpFirstComparator( int playerLvl, double proportion, double altXP ) {
 		this.playerLvl = playerLvl;
 		this.proportion = proportion;
 		this.altXP = altXP;
